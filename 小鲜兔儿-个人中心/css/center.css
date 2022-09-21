@@ -1,0 +1,239 @@
+.xtx_body{
+  padding: 30px 0 85px;
+  background-color: #f6f6f6;
+}
+.xtx_body .wrapper{
+  display: flex;
+}
+
+/* 侧边栏 */
+.xtx_body .aside{
+  width: 227px;
+  min-height: 500px;
+  margin-right: 18px;
+  background-color: #fff;
+}
+.aside .avatar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 230px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.aside .avatar img{
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+.aside .avatar h2{
+  margin: 14px 0 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}
+.aside .avatar i img{
+  margin: 0 5px 0 11px;
+  width: 15px;
+  height: 16px;
+  vertical-align: middle;
+}
+.aside .avatar a:last-child{
+  width: 93px;
+  height: 26px;
+  background-image: linear-gradient(264deg, 
+		#e05e2f 0%, 
+		#ea745e 95%);
+    /* background-color: #e05e2f; */
+  border-radius: 13px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #f9f9f9;
+}
+.aside .account{
+  padding: 35px 50px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.aside .account h3{
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}
+.aside .account li{
+  margin-bottom: 20px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 14px;
+  color: #666;
+}
+.aside .account li:hover{
+  list-style:inside;
+  color: #5cb99e;
+}
+
+
+/* 主题内容 */
+.xtx_body .main{
+  flex: 1;
+  min-height: 500px;
+  /* background-color: skyblue; */
+}
+/* 用户账号预览 */
+.overview{
+  display: flex;
+  height: 132px;
+  margin-bottom: 18px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+.overview div{
+  /* a在一行显示 */
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.overview div:first-child{
+  border-right: 1px solid #f4f4f4;
+}
+.overview div img{
+  width: 25px;
+  margin-bottom: 10px;
+}
+.overview div a:last-child img{
+  width: 18px;
+}
+.overview div span{
+  font-size: 25px;
+  color: #e05e30;
+}
+.overview div p{
+  font-size: 16px;
+}
+
+/* 公共样式 */
+.pannel{
+  padding: 28px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.pannel .pannel_title{
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.pannel .pannel_title h4{
+  font-size: 22px;
+  font-weight: 400;
+  color: #333;
+}
+.pannel .pannel_title a{
+  margin-top: 8px;
+  font-size: 16px;
+  color: #999;
+}
+/* 订单 */
+.orders li{
+  display: flex;
+  height: 137px;
+  margin-top: -1px;
+  margin-bottom: 20px;
+  border: 1px solid #f4f4f4;
+}
+.orders li:last-child{
+  margin-bottom: 0;
+}
+.orders li .goods{
+  display: flex;
+  flex: 1;
+  margin-right: 120px;
+  padding: 17px 0 14px 12px;
+  align-items: center;
+}
+.orders li .goods img{
+  width: 107;
+  height: 107px;
+}
+.orders li .goods .txt{
+  flex: 1;
+  /* 溢出的时候显示省略号 */
+  /* 因为弹性盒子的尺寸可以被弹开 不换行的文字可以撑开这个盒子*/
+  width: 0;
+}
+/* 溢出文本隐藏 */
+.orders li .goods h5{
+  font-size: 16px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.orders li .status{
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.orders li .status p:first-child{
+  color: #e05e30;
+}
+.orders li .status a{
+  margin-top: 10px;
+  color: #999;
+}
+.orders li .pay{
+  width: 200px;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+}
+.orders li .pay p:first-child{
+  color: #9a2e1f;
+}
+.orders li .action{
+  width: 180px;
+}
+.orders li .action a:first-child{
+  /* display: block; */
+  margin-bottom: 10px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #5eb69c;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+.orders li .common{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* 收藏商品 */
+.collect ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+.collect li img{
+  padding-left: 11px;
+  margin: 30px 0 22px;
+  width: 160px;
+  height: 160px;
+}
+.collect li p{
+  font-size: 16px;
+  color: #333;
+}
+.collect li span{
+  margin-top: 18px;
+  font-size: 22px;
+  color: #9a2e1f;
+}
+.collect li span i{
+  font-size: 17px;
+}
